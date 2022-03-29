@@ -1,7 +1,7 @@
 const carsElem = document.querySelector(".cars");
 
 axios
-.get("http://api-tutor.herokuapp.com/v1/cars")
+.get("https://api-tutor.herokuapp.com/v1/cars")
 .then(function (result) {
     result.data.forEach(car => {
                 const li = document.createElement("tr");
