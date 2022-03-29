@@ -6,9 +6,9 @@ axios
     result.data.forEach(car => {
                 const li = document.createElement("tr");
                 li.innerHTML = `<tr>
-                    <td>${car.model}</td>
-                    <td>${car.color}</td>
-                    <td>${car.make}</td>
+                    <td> ${car.model}</td>
+                    <td> ${car.color}</td>
+                    <td> ${car.make}</td>
                 </tr>`
                 
                 carsElem.appendChild(li);
