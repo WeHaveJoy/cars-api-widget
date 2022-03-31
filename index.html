@@ -14,32 +14,39 @@
 </head>
 
 <body>
+</select> 
+<br><br>
+Colors: <select name="color" id="color">
+  <option value="" selected="selected">Select color</option>
+</select>
+<br><br>
+Makes: <select name="make" id="make">
+  <option value="" selected="selected">Select make</option>
+</select>
+<br><br>
+<button class="btnFilter">Filter</button>
+
+<br>
+<br>
   <div class="container">
     <h1>Cars API widget</h1>
     <table class="cars">
       <th>MODEL</th>
       <th>COLOR</th>
       <th>MAKE</th>
+      <th>Reg_Num</th>
+      <th>Price</th>
     </table>
 
   </div>
   <br>
-
-  <form name="form1" id="form1" action="/action_page.php">
+<div class = 'show'></div>
+  <!-- <form name="form1" id="form1" action="/action_page.php"> -->
     <!-- Models: <select name="model" id="model">
-      <option value="" selected="selected">Select model</option>
-    </select> -->
-    <br><br>
-    Colors: <select name="color" id="color">
-      <option value="" selected="selected">Select color</option>
-    </select>
-    <br><br>
-    Makes: <select name="make" id="make">
-      <option value="" selected="selected">Select make</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Submit">
-  </form>
+      <option value="" selected="selected">Select model</option> -->
+   
+    <!-- <input type="submit" value="Submit" class="btnFilter"> -->
+  <!-- </form> -->
 </body>
 <script src="cars.js"></script>
 </html>

@@ -1,0 +1,25 @@
+
+body{
+ background-image: url("car.jpeg");
+ color: yellow;
+}
+
+table{
+    margin-left: 20em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+  }
+
+  th,tr{
+    border: 1px solid yellow;
+    text-align: left;
+    padding: 8px;
+    color: yellow;
+  }
+
+  td,th{
+    border: 1px solid yellow;
+  padding: 8px;
+  }
