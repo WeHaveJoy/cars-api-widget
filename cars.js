@@ -45,8 +45,6 @@ axios
 
   })
 
-
-
 filterElem.addEventListener("click", function () {
   let showElem = document.querySelector('.show')
   axios
@@ -54,7 +52,7 @@ filterElem.addEventListener("click", function () {
     .then(function (result) {
       result.data.forEach(car => {
         if (makesElem.value == car.make &&  colorsElem.value == car.color) {
-          const li = document.createElement("li");
+          const li = document.createElement("tr");
           
           li.innerHTML = `
         ${car.model}
@@ -62,14 +60,14 @@ filterElem.addEventListener("click", function () {
           showElem.appendChild(li)
         }
         else if (makesElem.value == car.make) {
-          const li = document.createElement("li");
+          const li = document.createElement("tr");
           
           li.innerHTML = `
         ${car.model}
           `
           showElem.appendChild(li)
         }else if (colorsElem.value == car.color) {
-          const li = document.createElement("li");
+          const li = document.createElement("tr");
           
           li.innerHTML = `
         ${car.model}
