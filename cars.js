@@ -55,22 +55,28 @@ filterElem.addEventListener("click", function () {
           const li = document.createElement("tr");
           
           li.innerHTML = `
-        ${car.model}
-          `
+        <tr>
+        <td>${car.model}</td>
+        </tr> 
+        `
           showElem.appendChild(li)
         }
         else if (makesElem.value == car.make) {
           const li = document.createElement("tr");
           
           li.innerHTML = `
-        ${car.model}
+         <tr>
+        <td>${car.model}</td>
+        </tr> 
           `
           showElem.appendChild(li)
         }else if (colorsElem.value == car.color) {
           const li = document.createElement("tr");
           
           li.innerHTML = `
-        ${car.model}
+          <tr>
+          <td>${car.model}</td>
+          </tr> 
           `
           showElem.appendChild(li)
         }
